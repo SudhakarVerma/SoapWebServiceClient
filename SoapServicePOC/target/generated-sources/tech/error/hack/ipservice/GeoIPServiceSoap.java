@@ -1,5 +1,5 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.jws.WebMethod;
 import jakarta.jws.WebParam;
@@ -32,8 +32,8 @@ public interface GeoIPServiceSoap {
      */
     @WebMethod(operationName = "GetIpLocation", action = "http://lavasoft.com/GetIpLocation")
     @WebResult(name = "GetIpLocationResult", targetNamespace = "http://lavasoft.com/")
-    @RequestWrapper(localName = "GetIpLocation", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetIpLocation")
-    @ResponseWrapper(localName = "GetIpLocationResponse", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetIpLocationResponse")
+    @RequestWrapper(localName = "GetIpLocation", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetIpLocation")
+    @ResponseWrapper(localName = "GetIpLocationResponse", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetIpLocationResponse")
     public String getIpLocation(
         @WebParam(name = "sIp", targetNamespace = "http://lavasoft.com/")
         String sIp);
@@ -47,8 +47,8 @@ public interface GeoIPServiceSoap {
      */
     @WebMethod(operationName = "GetIpLocation_2_0", action = "http://lavasoft.com/GetIpLocation_2_0")
     @WebResult(name = "GetIpLocation_2_0Result", targetNamespace = "http://lavasoft.com/")
-    @RequestWrapper(localName = "GetIpLocation_2_0", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetIpLocation20")
-    @ResponseWrapper(localName = "GetIpLocation_2_0Response", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetIpLocation20Response")
+    @RequestWrapper(localName = "GetIpLocation_2_0", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetIpLocation20")
+    @ResponseWrapper(localName = "GetIpLocation_2_0Response", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetIpLocation20Response")
     public String getIpLocation20(
         @WebParam(name = "sIp", targetNamespace = "http://lavasoft.com/")
         String sIp);
@@ -61,8 +61,8 @@ public interface GeoIPServiceSoap {
      */
     @WebMethod(operationName = "GetLocation", action = "http://lavasoft.com/GetLocation")
     @WebResult(name = "GetLocationResult", targetNamespace = "http://lavasoft.com/")
-    @RequestWrapper(localName = "GetLocation", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetLocation")
-    @ResponseWrapper(localName = "GetLocationResponse", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetLocationResponse")
+    @RequestWrapper(localName = "GetLocation", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetLocation")
+    @ResponseWrapper(localName = "GetLocationResponse", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetLocationResponse")
     public String getLocation();
 
     /**
@@ -74,8 +74,8 @@ public interface GeoIPServiceSoap {
      */
     @WebMethod(operationName = "GetCountryISO2ByName", action = "http://lavasoft.com/GetCountryISO2ByName")
     @WebResult(name = "GetCountryISO2ByNameResult", targetNamespace = "http://lavasoft.com/")
-    @RequestWrapper(localName = "GetCountryISO2ByName", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetCountryISO2ByName")
-    @ResponseWrapper(localName = "GetCountryISO2ByNameResponse", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetCountryISO2ByNameResponse")
+    @RequestWrapper(localName = "GetCountryISO2ByName", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetCountryISO2ByName")
+    @ResponseWrapper(localName = "GetCountryISO2ByNameResponse", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetCountryISO2ByNameResponse")
     public String getCountryISO2ByName(
         @WebParam(name = "countryName", targetNamespace = "http://lavasoft.com/")
         String countryName);
@@ -89,8 +89,8 @@ public interface GeoIPServiceSoap {
      */
     @WebMethod(operationName = "GetCountryNameByISO2", action = "http://lavasoft.com/GetCountryNameByISO2")
     @WebResult(name = "GetCountryNameByISO2Result", targetNamespace = "http://lavasoft.com/")
-    @RequestWrapper(localName = "GetCountryNameByISO2", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetCountryNameByISO2")
-    @ResponseWrapper(localName = "GetCountryNameByISO2Response", targetNamespace = "http://lavasoft.com/", className = "com.sv.info.ipservice.GetCountryNameByISO2Response")
+    @RequestWrapper(localName = "GetCountryNameByISO2", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetCountryNameByISO2")
+    @ResponseWrapper(localName = "GetCountryNameByISO2Response", targetNamespace = "http://lavasoft.com/", className = "tech.error.hack.ipservice.GetCountryNameByISO2Response")
     public String getCountryNameByISO2(
         @WebParam(name = "iso2Code", targetNamespace = "http://lavasoft.com/")
         String iso2Code);

@@ -1,9 +1,8 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -18,7 +17,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="GetIpLocationResult" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="iso2Code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,36 +28,35 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "getIpLocationResult"
+    "iso2Code"
 })
-@XmlRootElement(name = "GetIpLocationResponse")
-public class GetIpLocationResponse {
+@XmlRootElement(name = "GetCountryNameByISO2")
+public class GetCountryNameByISO2 {
 
-    @XmlElement(name = "GetIpLocationResult")
-    protected String getIpLocationResult;
+    protected String iso2Code;
 
     /**
-     * Gets the value of the getIpLocationResult property.
+     * Gets the value of the iso2Code property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getGetIpLocationResult() {
-        return getIpLocationResult;
+    public String getIso2Code() {
+        return iso2Code;
     }
 
     /**
-     * Sets the value of the getIpLocationResult property.
+     * Sets the value of the iso2Code property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setGetIpLocationResult(String value) {
-        this.getIpLocationResult = value;
+    public void setIso2Code(String value) {
+        this.iso2Code = value;
     }
 
 }

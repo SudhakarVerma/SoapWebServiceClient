@@ -1,5 +1,5 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;

@@ -1,8 +1,9 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -17,7 +18,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="iso2Code" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="GetCountryNameByISO2Result" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -28,35 +29,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "iso2Code"
+    "getCountryNameByISO2Result"
 })
-@XmlRootElement(name = "GetCountryNameByISO2")
-public class GetCountryNameByISO2 {
+@XmlRootElement(name = "GetCountryNameByISO2Response")
+public class GetCountryNameByISO2Response {
 
-    protected String iso2Code;
+    @XmlElement(name = "GetCountryNameByISO2Result")
+    protected String getCountryNameByISO2Result;
 
     /**
-     * Gets the value of the iso2Code property.
+     * Gets the value of the getCountryNameByISO2Result property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getIso2Code() {
-        return iso2Code;
+    public String getGetCountryNameByISO2Result() {
+        return getCountryNameByISO2Result;
     }
 
     /**
-     * Sets the value of the iso2Code property.
+     * Sets the value of the getCountryNameByISO2Result property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setIso2Code(String value) {
-        this.iso2Code = value;
+    public void setGetCountryNameByISO2Result(String value) {
+        this.getCountryNameByISO2Result = value;
     }
 
 }

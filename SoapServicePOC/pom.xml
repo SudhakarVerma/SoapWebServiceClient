@@ -2,7 +2,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.sv.info</groupId>
+	<groupId>tech.error.hack</groupId>
 	<artifactId>SoapServicePOC</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
@@ -78,7 +78,7 @@
 				</executions>
 				<configuration>
 					<wsdlDirectory>${project.basedir}/src/main/resources/wsdl/</wsdlDirectory>
-					<packageName>com.sv.info.ipservice</packageName>
+					<packageName>tech.error.hack.ipservice</packageName>
 					<sourceDestDir>${project.build.directory}/generated-sources/</sourceDestDir>
 				</configuration>
 			</plugin>

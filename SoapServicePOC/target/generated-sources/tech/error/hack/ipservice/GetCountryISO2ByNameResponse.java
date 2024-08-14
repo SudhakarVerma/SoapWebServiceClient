@@ -1,5 +1,5 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -18,7 +18,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="GetLocationResult" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="GetCountryISO2ByNameResult" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,36 +29,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "getLocationResult"
+    "getCountryISO2ByNameResult"
 })
-@XmlRootElement(name = "GetLocationResponse")
-public class GetLocationResponse {
+@XmlRootElement(name = "GetCountryISO2ByNameResponse")
+public class GetCountryISO2ByNameResponse {
 
-    @XmlElement(name = "GetLocationResult")
-    protected String getLocationResult;
+    @XmlElement(name = "GetCountryISO2ByNameResult")
+    protected String getCountryISO2ByNameResult;
 
     /**
-     * Gets the value of the getLocationResult property.
+     * Gets the value of the getCountryISO2ByNameResult property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getGetLocationResult() {
-        return getLocationResult;
+    public String getGetCountryISO2ByNameResult() {
+        return getCountryISO2ByNameResult;
     }
 
     /**
-     * Sets the value of the getLocationResult property.
+     * Sets the value of the getCountryISO2ByNameResult property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setGetLocationResult(String value) {
-        this.getLocationResult = value;
+    public void setGetCountryISO2ByNameResult(String value) {
+        this.getCountryISO2ByNameResult = value;
     }
 
 }

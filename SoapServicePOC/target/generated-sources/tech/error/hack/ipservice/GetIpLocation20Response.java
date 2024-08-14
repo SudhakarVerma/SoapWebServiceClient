@@ -1,8 +1,9 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -17,7 +18,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="sIp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="GetIpLocation_2_0Result" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -28,35 +29,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "sIp"
+    "getIpLocation20Result"
 })
-@XmlRootElement(name = "GetIpLocation_2_0")
-public class GetIpLocation20 {
+@XmlRootElement(name = "GetIpLocation_2_0Response")
+public class GetIpLocation20Response {
 
-    protected String sIp;
+    @XmlElement(name = "GetIpLocation_2_0Result")
+    protected String getIpLocation20Result;
 
     /**
-     * Gets the value of the sIp property.
+     * Gets the value of the getIpLocation20Result property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getSIp() {
-        return sIp;
+    public String getGetIpLocation20Result() {
+        return getIpLocation20Result;
     }
 
     /**
-     * Sets the value of the sIp property.
+     * Sets the value of the getIpLocation20Result property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setSIp(String value) {
-        this.sIp = value;
+    public void setGetIpLocation20Result(String value) {
+        this.getIpLocation20Result = value;
     }
 
 }

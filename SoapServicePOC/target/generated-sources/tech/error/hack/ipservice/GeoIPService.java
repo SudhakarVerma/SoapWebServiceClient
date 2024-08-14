@@ -1,5 +1,5 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -19,7 +19,7 @@ import jakarta.xml.ws.WebServiceFeature;
  * Generated source version: 3.0
  * 
  */
-@WebServiceClient(name = "GeoIPService", targetNamespace = "http://lavasoft.com/", wsdlLocation = "file:/E:/POC_Workspace/SoapServicePOC/src/main/resources/wsdl/ipservice.wsdl")
+@WebServiceClient(name = "GeoIPService", targetNamespace = "http://lavasoft.com/", wsdlLocation = "file:/C:/Users/svcoo/git/repository/soapWebClient/SoapServicePOC/src/main/resources/wsdl/ipservice.wsdl")
 public class GeoIPService
     extends Service
 {
@@ -32,7 +32,7 @@ public class GeoIPService
         URL url = null;
         WebServiceException e = null;
         try {
-            url = new URL("file:/E:/POC_Workspace/SoapServicePOC/src/main/resources/wsdl/ipservice.wsdl");
+            url = new URL("file:/C:/Users/svcoo/git/repository/soapWebClient/SoapServicePOC/src/main/resources/wsdl/ipservice.wsdl");
         } catch (MalformedURLException ex) {
             e = new WebServiceException(ex);
         }

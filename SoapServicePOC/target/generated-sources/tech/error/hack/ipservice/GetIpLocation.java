@@ -1,5 +1,5 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -17,7 +17,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="countryName" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="sIp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -28,35 +28,35 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "countryName"
+    "sIp"
 })
-@XmlRootElement(name = "GetCountryISO2ByName")
-public class GetCountryISO2ByName {
+@XmlRootElement(name = "GetIpLocation")
+public class GetIpLocation {
 
-    protected String countryName;
+    protected String sIp;
 
     /**
-     * Gets the value of the countryName property.
+     * Gets the value of the sIp property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getCountryName() {
-        return countryName;
+    public String getSIp() {
+        return sIp;
     }
 
     /**
-     * Sets the value of the countryName property.
+     * Sets the value of the sIp property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setCountryName(String value) {
-        this.countryName = value;
+    public void setSIp(String value) {
+        this.sIp = value;
     }
 
 }

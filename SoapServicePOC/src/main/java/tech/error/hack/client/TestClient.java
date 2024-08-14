@@ -1,7 +1,7 @@
-package com.sv.info.client;
+package tech.error.hack.client;
 
-import com.sv.info.ipservice.GeoIPService;
-import com.sv.info.ipservice.GeoIPServiceSoap;
+import tech.error.hack.ipservice.GeoIPService;
+import tech.error.hack.ipservice.GeoIPServiceSoap;
 
 public class TestClient {
 

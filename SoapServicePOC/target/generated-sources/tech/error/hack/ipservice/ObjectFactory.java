@@ -1,5 +1,5 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import javax.xml.namespace.QName;
 import jakarta.xml.bind.JAXBElement;
@@ -10,7 +10,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.sv.info.ipservice package. 
+ * generated in the tech.error.hack.ipservice package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -27,7 +27,7 @@ public class ObjectFactory {
     private final static QName _String_QNAME = new QName("http://lavasoft.com/", "string");
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.sv.info.ipservice
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: tech.error.hack.ipservice
      * 
      */
     public ObjectFactory() {

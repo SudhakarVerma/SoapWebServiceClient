@@ -1,9 +1,8 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -18,7 +17,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="GetCountryNameByISO2Result" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="sIp" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,36 +28,35 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "getCountryNameByISO2Result"
+    "sIp"
 })
-@XmlRootElement(name = "GetCountryNameByISO2Response")
-public class GetCountryNameByISO2Response {
+@XmlRootElement(name = "GetIpLocation_2_0")
+public class GetIpLocation20 {
 
-    @XmlElement(name = "GetCountryNameByISO2Result")
-    protected String getCountryNameByISO2Result;
+    protected String sIp;
 
     /**
-     * Gets the value of the getCountryNameByISO2Result property.
+     * Gets the value of the sIp property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getGetCountryNameByISO2Result() {
-        return getCountryNameByISO2Result;
+    public String getSIp() {
+        return sIp;
     }
 
     /**
-     * Sets the value of the getCountryNameByISO2Result property.
+     * Sets the value of the sIp property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setGetCountryNameByISO2Result(String value) {
-        this.getCountryNameByISO2Result = value;
+    public void setSIp(String value) {
+        this.sIp = value;
     }
 
 }

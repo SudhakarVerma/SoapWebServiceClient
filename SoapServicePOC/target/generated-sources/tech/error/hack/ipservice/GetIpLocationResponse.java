@@ -1,5 +1,5 @@
 
-package com.sv.info.ipservice;
+package tech.error.hack.ipservice;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -18,7 +18,7 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="GetIpLocation_2_0Result" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="GetIpLocationResult" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -29,36 +29,36 @@ import jakarta.xml.bind.annotation.XmlType;
  */
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
-    "getIpLocation20Result"
+    "getIpLocationResult"
 })
-@XmlRootElement(name = "GetIpLocation_2_0Response")
-public class GetIpLocation20Response {
+@XmlRootElement(name = "GetIpLocationResponse")
+public class GetIpLocationResponse {
 
-    @XmlElement(name = "GetIpLocation_2_0Result")
-    protected String getIpLocation20Result;
+    @XmlElement(name = "GetIpLocationResult")
+    protected String getIpLocationResult;
 
     /**
-     * Gets the value of the getIpLocation20Result property.
+     * Gets the value of the getIpLocationResult property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getGetIpLocation20Result() {
-        return getIpLocation20Result;
+    public String getGetIpLocationResult() {
+        return getIpLocationResult;
     }
 
     /**
-     * Sets the value of the getIpLocation20Result property.
+     * Sets the value of the getIpLocationResult property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setGetIpLocation20Result(String value) {
-        this.getIpLocation20Result = value;
+    public void setGetIpLocationResult(String value) {
+        this.getIpLocationResult = value;
     }
 
 }
